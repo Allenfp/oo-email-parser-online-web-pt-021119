@@ -8,7 +8,7 @@ class EmailParser
   attr_accessor :parse
 
   def initialize(string)
-      @parse = string.tr(',','').split(' ')
+      @parse = string.tr(',','').split(' ').uniq
   end
 
 
